@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy website demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Francois+One&family=Inter:wght@200&family=Lexend+Deca:wght@300;400&family=Lobster&family=Pacifico&family=Questrial&family=REM:ital,wght@0,300;1,300&family=Raleway&family=Roboto+Condensed&family=Roboto:wght@300;400&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 27px;
+        }
+        .navbar ul li a{
+            color:  rgba(255, 255, 255, 0.515);;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 10px;
+            transition: 0.5s;
+        }
+        .navbar ul li a:hover{
+            color: #ffffff;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .roof{
+            color: #ffffff;
+            font-size: 32px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            margin-left: 20px;
+          position: relative;
+          bottom: 14px;
+        }
+        .btn{
+            width: 140px;
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-family: arial;
+           margin-right: 20px;
+           margin-top: 11px;
+           color: #ffffff;
+           background-color: #e84545;
+           border: 2px solid  #e84545;
+           cursor: pointer;
+           transition: 0.5s;
+         
+        }
+        .btn:hover{
+            color: #e84545;
+            background-color: #0000;
+            border: 2px solid white;
+        }
+        span{
+            color:  #e84545;;
+        }
+        .section{
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            right: 300px;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+          
+        }
+        .top {
+            font-size: 70px;
+            font-weight: 900;
+            word-spacing: 10px;
+            font-family: 'Roboto Condensed', sans-serif;
+            
+        }
+        p{
+            font-size: 22px;
+            font-family: 'Raleway', sans-serif;
+            word-spacing: 3px;
+  color: #fff;
+  position: relative;
+  bottom: 40px;
+        }
+        input{
+  width: 480px;
+  height: 70px;
+  border-radius: 7px;
+  border: 2px solid #ffffff;
+  font-size: 19px;
+  word-spacing: 1px;
+  padding-left: 30px;
+  margin-right: 55px;
+  position: relative;
+  bottom: 36px;
+        }
+      
+        .bts{
+            position: relative;
+            right: 170px;
+            width: 100px;
+            bottom: 35px;
+            height: 50px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-family: arial;
+           margin-right: 20px;
+           margin-top: 3px;
+           color: #ffffff;
+           background-color: #e84545;
+           border: 2px solid  #e84545;
+           cursor: pointer;
+           transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1 class="roof">Append<span>.</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div><button class="btn">Get Started</button></div>
+        </nav>
+        <div class="section">
+            <h1 class="top">Welcome to Our Website</h1>
+            <p>We are  team of talented designers also making websites with us </p>
+            <div>
+                <input type="email" name="email" placeholder="Enter your email"
+             class="top1"   ><button class="bts">Singn up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
